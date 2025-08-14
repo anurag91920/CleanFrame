@@ -23,11 +23,11 @@ const Header = () => {
     try {
       const token = localStorage.getItem("token");
 
-      const response = await axios.post("http://localhost:9000/api/images/upload", formData, {
+      const response = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_URL}/api/images/upload`, formData, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
-      const imageUrl = `http://localhost:9000${response.data.imageUrl}`;
+      const imageUrl = `${import.meta.env.VITE_REACT_APP_BACKEND_URL}${response.data.imageUrl}`;
       setResultImage(imageUrl); // Processed image context में डालो
 
       // ✅ Navigate to /result page
