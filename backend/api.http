@@ -1,0 +1,30 @@
+### Register User
+POST http://localhost:9000/api/users/register
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "email": "testuser@example.com",
+  "password": "password123"
+}
+
+### Login User
+POST http://localhost:9000/api/users/login
+Content-Type: application/json
+
+{
+  "email": "testuser@example.com",
+  "password": "password123"
+}
+
+### Remove Background
+POST http://localhost:9000/api/images/remove-background
+Content-Type: application/json
+Authorization: Bearer <your_jwt_token>
+
+{
+  "imageUrl": "https://example.com/path-to-your-image.jpg"
+}
+
+### Get Uploaded Image
+GET http://localhost:9000/uploads/<filename.png>

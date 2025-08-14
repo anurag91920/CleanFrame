@@ -1,0 +1,53 @@
+.bigslide-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #0e1a2b;
+  color: white;
+}
+
+.bigslide-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.compare-wrapper {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  cursor: ew-resize;
+  overflow: hidden;
+}
+
+.full-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.image-overlay img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slider-line {
+  position: absolute;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 3;
+  transform: translateX(-50%);
+}

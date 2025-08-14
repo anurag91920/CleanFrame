@@ -1,0 +1,35 @@
+/* Footer.css */
+
+.footer {
+  background-color: #09162e;
+  padding: 30px 0;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-line {
+  border-top: 1px solid #444;
+  width: 80%;
+  margin: 0 auto 20px;
+}
+
+.footer-text {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 20px;
+  margin-left: 600px;
+}
+
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .footer-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-text {
+    font-size: 0.9rem;
+  }
+}
