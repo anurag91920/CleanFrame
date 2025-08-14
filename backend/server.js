@@ -19,10 +19,10 @@ const __dirname = path.dirname(__filename);
 const app = express();
 
 // ✅ CORS Middleware (after app is defined)
+// ✅ CORS config
 app.use(cors({
-  origin: 'http://localhost:5173',
-  methods: ['GET', 'POST'],
-  credentials: true
+  origin: 'https://clean-frame.vercel.app', // ✅ only allow your frontend
+  credentials: true // if you're using cookies or auth headers
 }));
 
 // Middleware
