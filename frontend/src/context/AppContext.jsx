@@ -6,7 +6,8 @@ export const AppContext = createContext();
 
 // 2️⃣ Provider component बनाएँ
 export const AppContextProvider = ({ children }) => {
-  const backendUrl = "http://localhost:9000/api/users";
+  const backendUrl = import.meta.env.VITE_REACT_APP_BACKEND_URL;
+
 
   // 🖼️ Image states
   const [image, setImage] = useState(null);

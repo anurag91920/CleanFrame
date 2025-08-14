@@ -17,7 +17,7 @@ const Login = () => {
   setMessage('');
 
   try {
-    const res = await axios.post('http://localhost:9000/api/users/login', form);
+    const res = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_URL}/api/users/login`, form);
     localStorage.setItem('token', res.data.token);
     setMessage('Logged in successfully!');
     navigate('/');  // homepage redirect

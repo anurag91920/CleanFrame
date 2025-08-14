@@ -17,7 +17,7 @@ const Register = () => {
   setMessage('');
 
   try {
-    const res = await axios.post('http://localhost:9000/api/users/register', form);
+    const res = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_URL}/api/users/register`, form);
     localStorage.setItem('token', res.data.token);
     setMessage('Registered successfully!');
     navigate('/');  // सीधे homepage पर redirect
